@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ausbildung.html">Ausbildung</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="aboutme.html">About</a>
+    </nav>
+
+    <div class="container">
+      <div class="page">
+        <span class="title">Timo Goedertier</span>
+        <span class="description">Mein Portfolio</span>
+        <button onclick="openContactPopup()">Contact Me</button>
+        <div id="contactPopup" class="popup">
+          <div class="popup-content">
+            <h2>Contact Me</h2>
+            <form>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </form>
+
+            <button
+              type="submit"
+              class="submit-button"
+              onclick="closeContactPopup()"
+            >
+              Send
+            </button>
+            <button class="close-button" onclick="closeContactPopup()">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="container-content">
+          <h1>Mein Portfolio:</h1>
+          <h2>
+            <br />
+          </h2>
+          <button onclick="openPortfolioPage()">Portfolio</button>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="container-content2">
+          <h1>Meine Ausbildung</h1>
+          <h2>
+            Ich habe für 4 Jahre die Primarschule Dorf in WEttingen besucht.
+            Danach ging ich für 2 Jahre an die Schule Zehntenhof und dann war
+            ich für 4 Jahre an der Bezirksschule Wettingen. Nun gehe ich an die
+            Informatikmittelschule an der Kantonsschule Baden.
+            <br />
+          </h2>
+          <button onclick="openAusblidungPage()">Mehr Info</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/timog06" target="_blank"
+        ><img src="GitHub.png" alt="Github"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/timo-goedertier-bb693827b/"
+        target="_blank"
+        ><img src="LinkedIn.png" alt="LinkedIn"
+      /></a>
+      <a href="https://twitter.com/" target="_blank"
+        ><img src="Twitter.png" alt="Twitter"
+      /></a>
+    </div>
+
+    <footer>
+      <div>
+        <p>&copy; 2023 All Rights Reserved - Portfolio T.Goedertier</p>
+      </div>
+    </footer>
+  </body>
+</html>
